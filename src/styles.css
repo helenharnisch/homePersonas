@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background:#eaeaea !important;
+    font-family: sans-serif;
+}
+
+.card{
+    background: #fff;
+    box-shadow: 0px 0px 1px #666;
+    width:250px;
+    padding: 10px;
+}
+
+.col-20{
+    width: 20%;
+    float: left;
+}

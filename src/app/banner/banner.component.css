@@ -1,0 +1,24 @@
+.banner{
+    position: relative;
+}
+
+
+.info{
+    background: rgba(255,255,255, .7);
+    width: 715px;
+    height: 55px;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    z-index: 1;
+}
+
+
+.titulo{
+    font-size: 16px;
+    color:#ec0000;
+}
+
+.bajada{
+    font-size: 14px;
+}

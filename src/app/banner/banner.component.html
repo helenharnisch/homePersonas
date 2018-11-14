@@ -1,3 +1,11 @@
-<div class="col-md-12">
-  <img src="/assets/img/banners/amazon-banner-home.jpg" alt="" class="img-fluid">
+<div class="row">
+    <div class="col-md-12" *ngFor="let banner of banners">
+      <div class="banner">
+        <img [src]="banner.img" alt="" class="img-fluid">
+      </div>
+        <div class="info">
+           <h2 class="titulo">{{banner.titulo}}</h2>
+           <p class="bajada">{{banner.bajada}}</p>
+        </div>
+      </div>
 </div>
