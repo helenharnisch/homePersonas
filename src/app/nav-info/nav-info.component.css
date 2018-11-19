@@ -1,0 +1,45 @@
+.titulo{
+    font-size: 16px;
+    color: #5b5a5b;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.navInfo{
+    margin: 0;
+    padding: 0;
+}
+
+.navInfoItem{
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    height: 60px;
+    background-color: #A9A9A9;
+    border-right: 2px solid  #eaeaea;
+}
+
+.navInfoItem a{
+    display: inline-block;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+    line-height: 60px
+}
+
+.navInfoItem:hover{
+    background: #ec0000;
+}
+
+.navInfoItem a:hover{
+    text-decoration: none;
+}

@@ -112,7 +112,8 @@ export class DataService {
       nombretab: ""
     }
 
-  ]
+  ];
+
 
 
 
@@ -123,6 +124,7 @@ export class DataService {
 
 
 getBanners(){
+
    return this.banners;
 };
 
