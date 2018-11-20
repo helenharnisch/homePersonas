@@ -11,8 +11,7 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class BannerComponent implements OnInit {
   banners:any;
-  contador:number;
-  banner:any;
+
   constructor(private servicio:DataService) { }
 
   ngOnInit() {

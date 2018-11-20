@@ -49,7 +49,6 @@
 	background-color: #EC0000;
 	color: #FFF;
 	font-size: 13px;
-	font-family: 'Kievit-Bold';
 	text-align: left;
 	border-left: 1px solid #FFF;
 }
@@ -63,7 +62,6 @@
 .widget tbody tr td:first-child
 {
 	background-color: #DCDCDC;
-	font-family: 'Kievit-Bold';
 }
 
 .widget thead tr th:first-child, .widget tbody tr td:first-child, .widget tfoot tr td:first-child

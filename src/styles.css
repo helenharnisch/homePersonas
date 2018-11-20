@@ -15,3 +15,7 @@ body{
     width: 20%;
     float: left;
 }
+
+.container{
+    max-width: 960px;
+}

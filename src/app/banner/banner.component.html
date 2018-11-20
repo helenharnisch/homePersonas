@@ -4,7 +4,7 @@
 
           
            
-            <ngb-carousel>
+            <ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
               <ng-template ngbSlide *ngFor="let banner of banners">
                 <img [src]="banner.img" alt="Random slide">
                 <div class="carousel-caption info">
