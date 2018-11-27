@@ -36,7 +36,7 @@ export class DataService {
 
       
 
-      private tabs:any[]= [
+      private tabs:Datos[]= [
         {
           img: "/assets/img/tabs/santander-life-tab-home.jpg",
           nombretab: "Santander Life",
