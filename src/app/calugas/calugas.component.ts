@@ -23,19 +23,4 @@ export class CalugasComponent implements OnInit {
   }
 
 
- 
-
-
-//   if(aparecer){
-//     aparecer=== true;
-//   }
-
-//   items=[
-//     "enero",
-//     "febrero",
-//     "marzo",
-//     "abril",
-
-// ]
-
 }

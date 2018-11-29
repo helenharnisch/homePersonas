@@ -1,0 +1,355 @@
+.titulo{
+    font-size: 16px;
+    color: #5b5a5b;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+.widget
+{
+	text-align: right;
+	border-collapse: collapse;
+	padding: 0;
+	background-color: #F8F8F8;
+	color: #414141;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.widget a
+{
+	color: #FFF;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.widget-footer
+{
+	font-size: 12px;
+	color: #999999;
+	padding: 10px;
+	display: block;
+	clear: both;
+}
+
+.widget-footer a
+{
+	color: #EC0000;
+	font-weight: bold;
+}
+
+.widget thead tr th, .widget tbody tr td, .widget tfoot tr td
+{
+	padding: 0 10px;
+}
+
+.widget thead tr th
+{
+	background-color: #EC0000;
+	color: #FFF;
+	font-size: 13px;
+	text-align: left;
+	border-left: 1px solid #FFF;
+}
+
+.widget tbody tr td
+{
+	text-align: right;
+	border-left: 1px solid #DCDCDC;
+}
+
+.widget tbody tr td:first-child
+{
+	background-color: #DCDCDC;
+}
+
+.widget thead tr th:first-child, .widget tbody tr td:first-child, .widget tfoot tr td:first-child
+ {
+ 	text-align: left;
+ 	border-left: none;
+ }
+
+ .widget tfoot tr td
+{
+	background-color: #656565;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.widget tfoot tr td:first-child
+{
+	background-color: #A9A9A9;
+}
+
+.arrow-right {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	border-left: 7px solid #FFF;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.varStock
+{
+    width: 100%;
+	display: inline-block;
+	padding: 2px;
+}
+
+/*-----------------------Size Small-----------------------*/
+
+.small
+{
+	width: 240px;
+}
+
+.small thead tr th
+{
+	height: 28px;
+}
+
+.small thead tr th:first-child, .small tbody tr td:first-child, .small tfoot tr td:first-child
+{
+ 	width: 101px;
+}
+
+.small tbody tr td
+{
+	height: 25px;
+}
+
+.small tbody tr:first-child td
+{
+	border-top: none;
+}
+
+.small tfoot tr td
+{
+	height: 24px;
+}
+
+/*-----------------------Size Medium-----------------------*/
+
+.medium
+{
+	width: 310px;
+	height: 190px;
+}
+
+.medium thead tr th
+{
+	height: 35px;
+}
+
+.medium thead tr th:first-child, .medium tbody tr td:first-child, .medium tfoot tr td:first-child
+{
+ 	width: 139px;
+}
+
+.medium tfoot tr td
+{
+	height: 28px;
+}
+
+/*-----------------------Size Landscape-----------------------*/
+
+.landscape
+{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.landscape:after
+{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.landscape .widget
+{
+	width: 50%;
+	float: left;
+}
+
+.landscape .widget thead tr th
+{
+	height: 32px;
+}
+
+.landscape .widget tbody tr td
+{
+	height: 25px;
+}
+
+.landscape .widget tfoot tr td
+{
+	height: 27px;
+}
+
+.landscape .widget thead tr th:first-child, .landscape .widget tbody tr td:first-child
+{
+	min-width: 100px;
+}
+
+.landscape .widget img
+{
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.landscape .widget thead tr th img
+{
+	width: 18px;
+}
+
+.widgetBand{
+    width: 100%;
+    height: 40px;
+	border: 1px solid #B6B6B6;
+	background-color: #F0F0F0;
+	text-align: center;
+	font-size: 18px;
+	padding: 7px 0;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 10px 0;
+    text-transform: uppercase;
+    position: relative;
+	-webkit-box-shadow: 0px -1px 0px 0px rgba(214, 214, 214, 1);
+    -moz-box-shadow: 0px -1px 0px 0px rgba(214, 214, 214, 1);
+    box-shadow: 0px -1px 0px 0px rgba(214, 214, 214, 1);
+}
+
+.widgetBand::before
+{
+	content: "";
+	position: absolute;
+	display: block;
+
+	background-repeat: repeat-x;
+	background-position: 0 -25%;
+	top: 0;
+	left: 0;
+}
+
+.widgetBand::after
+{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 1px;
+	border-top: 1px solid #FEFEFE;
+	border-bottom: 1px solid #E1E1E1;
+	bottom: 0;
+	left: 0;
+}
+
+.widgetBand .bandItem
+{
+	border-right: 1px solid #B6B6B6;
+	padding: 3px 10px;
+}
+
+.widgetBand ul
+{
+	width: 2273px;
+	padding: 0;
+}
+
+.widgetBand ul li
+{
+	/*width: 430px;*/
+	color: #656565;
+}
+
+.widgetBand .bandItem b, .widgetBand .bandItem span
+{
+	padding: 0 10px;
+}
+
+.ie8 .landscape .widget .iconos
+{
+	display: inline;
+}
+
+.landscape a img
+{
+	width: auto;
+	height: 12px;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-top: -2px;
+	border: none;
+}
+
+@media only screen and (max-width: 1920px){
+
+	.landscape
+	{
+		max-width: 960px;
+	}
+
+	.widgetBand::before
+	{
+		width: 38px;
+		height: 38px;
+		background-size:  auto 80%;
+		-ms-transform: rotate(270deg);
+		-webkit-transform: rotate(270deg);
+		transform: rotate(270deg);
+	}
+}
+
+@media only screen and (max-width: 550px){
+
+	.landscape
+	{
+		max-width: 960px;
+	}
+
+	.landscape .widget
+	{
+		width: 100%;
+	}
+
+	.landscape .table1 tfoot
+	{
+		display: none;
+	}
+
+	.landscape .table2 thead
+	{
+		display: none;
+	}
+
+	.landscape .widget tbody tr td
+	{
+		width: 20%;
+	}
+
+	.landscape .widget tbody tr td:first-child
+	{
+		width: 60%;
+	}
+
+}
+
+@media only screen and (max-width: 768px){
+    .widgetBand::before
+	{
+		width: 100%;
+		height: 100%;
+		background-size:  auto 50%;
+		-ms-transform: rotate(0deg);
+ 		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}

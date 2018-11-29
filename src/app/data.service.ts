@@ -45,13 +45,13 @@ export class DataService {
             "Por primera vez un banco valora tus méritos con reconocimientos exclusivos."
         },
         {
-          img: "/assets/img/tabs/applex-tab-home.jpg",
+          img: "/assets/img/tabs/apple-tab-home.jpg",
           nombretab: "Apple",
           titulo: "Apple",
           bajada: "iPhone XS, XS Max y iPhone XR"
         },
         {
-          img: "/assets/img/tabs/work-cafe-tab.jpg",
+          img: "/assets/img/tabs/work-cafe-tab-home.jpg",
           nombretab: "Seguros en promoción",
           titulo: "Llévate hasta 6.000 Millas LATAM Pass",
           bajada: "Válido entre el 7 y 20 de noviembre."
@@ -112,7 +112,8 @@ export class DataService {
       nombretab: ""
     }
 
-  ]
+  ];
+
 
 
 
@@ -123,6 +124,7 @@ export class DataService {
 
 
 getBanners(){
+
    return this.banners;
 };
 

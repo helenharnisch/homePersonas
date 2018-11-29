@@ -30,14 +30,14 @@ export class TabsComponent implements OnInit {
 
 export class NgbdCarouselNavigation {
   showNavigationArrows = false;
-  showNavigationIndicators = false;
+  showNavigationIndicators = true;
   wrap= true;
 
 
   constructor(config: NgbCarouselConfig, private _http: HttpClient) {
     // customize default values of carousels used by this component tree
       config.showNavigationArrows = false;
-      config.showNavigationIndicators = false;
+      config.showNavigationIndicators = true;
   }
 }
 

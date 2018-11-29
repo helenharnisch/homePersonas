@@ -10,17 +10,17 @@
                 <div class="col-md-4 productos">
                     <div>
                         <ul class="menu_productos">
-                            <li><a href="#" id="Prod1" nu="1" class="botonTab1">WORK/CAFÉ SANTANDER</a></li>
-                            <li><a href="#" id="Prod2" nu="2" class="botonTab2">APPLE</a></li>
-                            <li><a href="#" id="Prod3" nu="3" class="botonTab3 seleccionaP">SANTANDER WEEK</a></li>
-                            <li><a href="#" id="Prod4" nu="4" class="botonTab4">SANTANDER LIFE</a></li>
-                            <li><a href="#" id="Prod6" nu="6" class="botonTab6">EDUCACIÓN</a></li>
-                            <li><a href="#" id="Prod6" nu="6" class="botonTab6">EDUCACIÓN</a></li>
+                            <li><a href="#" id="ngb-slide-1" nu="1" class="botonTab1">WORK/CAFÉ SANTANDER</a></li>
+                            <li><a href="#" id="ngb-slide-2" nu="2" class="botonTab2">APPLE</a></li>
+                            <li><a href="#" id="ngb-slide-3" nu="3" class="botonTab3 seleccionaP">SANTANDER WEEK</a></li>
+                            <li><a href="#" id="ngb-slide-4" nu="4" class="botonTab4">SANTANDER LIFE</a></li>
+                            <li><a href="#" id="ngb-slide-5" nu="6" class="botonTab6">EDUCACIÓN</a></li>
+                            <li><a href="#" id="ngb-slide-6" nu="6" class="botonTab6">EDUCACIÓN</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-8 productos">
-                    <ngb-carousel id="cargadorAcciones" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+                    <ngb-carousel id="cargadorAcciones" [showNavigationArrows]="showNavigationArrows">
                         <ng-template ngbSlide *ngFor="let tab of tabs">
                             <div class="carousel-caption caja_productos1">
                                 <p class="titu">{{tab.titulo}}</p>

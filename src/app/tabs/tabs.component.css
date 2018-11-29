@@ -8,6 +8,16 @@
     background: #FFF;
 }
 
+.carousel-caption {
+    bottom: 20px;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    left: 0;
+}
+
 #cargadorAcciones {
     width: 318px;
     height: 158px;
@@ -19,8 +29,7 @@
 }
 
 #cargadorAcciones .caja_productos1 {
-    overflow: hidden;
-    height: 158px;
+    height: 178px;
     position: relative;
     display: block;
     text-align: left;
@@ -68,7 +77,7 @@ p.titu {
     color: #333;
     width: auto;
     height: 22px;
-    margin: 11px 0 0 10px;
+    margin: 11px 0 0;
     font-weight: normal;
     padding: 0;
     border-bottom: 1px solid #dfdfdf;
@@ -77,7 +86,7 @@ p.titu {
 #cargadorAcciones img.imagen {
     float: left;
     padding: 0;
-    margin: 10px 0 0 10px;
+    margin: 10px 0 0;
 }
 
 #cargadorAcciones p.textoTab {
