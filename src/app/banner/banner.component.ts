@@ -1,35 +1,47 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
   styleUrls: ['./banner.component.css'],
-  providers: [NgbCarouselConfig],
+  providers: [DataService, NgbCarouselConfig],
 })
 export class BannerComponent implements OnInit {
   banners:any;
-
-  constructor(private servicio:DataService) { }
-
-  ngOnInit() {
-
-      this.banners=  this.servicio.getBanners();
-}
-           
-};
-
-export class NgbdCarouselNavigation {
   showNavigationArrows = false;
   showNavigationIndicators = false;
   wrap= true;
 
+  bannersOk:any[] = [];
 
-  constructor(config: NgbCarouselConfig, private _http: HttpClient) {
-    // customize default values of carousels used by this component tree
-      config.showNavigationArrows = false;
-      config.showNavigationIndicators = false;
+  constructor(private servicio:DataService, private router: Router,config: NgbCarouselConfig) {
+    config.showNavigationArrows = false;
+    config.showNavigationIndicators = false;
+   }
+
+  ngOnInit() {
+
+    this.banners=  this.servicio.getData();
+
+    this.bannersOk = this.banners.filter((e:any) => {
+      if(e.tipo === 'banner'){
+        return e;
+      }
+    })
+
   }
-}
+
+
+
+  verLanding( idx:number){
+    this.router.navigate( ['/landing', idx] );
+    console.log(idx);
+
+  }
+   
+
+  }
+      

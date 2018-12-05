@@ -10,9 +10,12 @@ import { TabsComponent } from './tabs/tabs.component';
 import { DataService } from './data.service';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NavInfoComponent } from './nav-info/nav-info.component';
 import { IndEconomicosComponent } from './ind-economicos/ind-economicos.component';
+import { LandingComponent } from './landing/landing.component';
+import { HomeComponent } from './home/home.component';
+
+import { APP_ROUTES } from './app.routes';
 
 
 
@@ -28,17 +31,15 @@ import { IndEconomicosComponent } from './ind-economicos/ind-economicos.componen
     HeaderComponent,
     FooterComponent,
     NavInfoComponent,
-    IndEconomicosComponent,   
+    IndEconomicosComponent,
+    LandingComponent,
+    HomeComponent,   
   ],
   imports: [
     BrowserModule,
     NgbModule,
-<<<<<<< HEAD
-=======
-   
->>>>>>> d17e7694805ad9ca67eca2073098ac84ea006175
-
-  ],
+    APP_ROUTES,
+ ],
   providers: [DataService],
   bootstrap: [AppComponent]
 })

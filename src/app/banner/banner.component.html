@@ -2,22 +2,19 @@
     <div class="row">
         <div class="col-md-12">
 
-          
-           
-            <ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
-              <ng-template ngbSlide *ngFor="let banner of banners">
-                <img [src]="banner.img" alt="Random slide">
-                <div class="carousel-caption info">
-       
-                  <h3 class="titulo">{{banner.titulo}}</h3>
-                  <p class="bajada">{{banner.bajada}}</p>
+            <ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators" [wrap]="true">
+                <ng-template ngbSlide *ngFor="let banner of bannersOk, let i = index">
+                    <img [src]="banner.img" alt="Random slide">
+                    <div class="carousel-caption info">
 
-                </div>
-              </ng-template>
+                        <h3 class="titulo">{{banner.titulo}}</h3>
+                        <p class="bajada">{{banner.bajada}}</p>
+                        <button (click)="verLanding(i)" type="button" class="btn btn-outline-primary btn-block">Comprar</button>
+                    </div>
+                </ng-template>
             </ngb-carousel>
-            
-            
+
+
         </div>
     </div>
 </section>
-

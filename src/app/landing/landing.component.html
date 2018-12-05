@@ -1,0 +1,16 @@
+<h1>
+    Landing<small></small></h1>
+<hr>
+<div class="card-columns">
+    <div class="card">
+
+        <div class="card-body">
+            <img [src]="landing.img" alt="">
+            <h4>{{landing.titulo}}</h4>
+            <p class="card-text">{{ landing.bajada }}</p>
+            <button (click)="verLanding(i)" type="button" class="btn btn-outline-primary btn-block">Comprar</button>
+            <hr>
+            <a [routerLink]="['/home']" class="btn btn-outline-primary text-center">Volver</a>
+        </div>
+    </div>
+</div>

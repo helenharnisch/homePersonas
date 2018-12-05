@@ -12,7 +12,7 @@
                         <ul class="menu_productos">
                             <li><a href="#" id="ngb-slide-1" nu="1" class="botonTab1">WORK/CAFÉ SANTANDER</a></li>
                             <li><a href="#" id="ngb-slide-2" nu="2" class="botonTab2">APPLE</a></li>
-                            <li><a href="#" id="ngb-slide-3" nu="3" class="botonTab3 seleccionaP">SANTANDER WEEK</a></li>
+                            <li><a href="#" id="ngb-slide-3" nu="3" class="botonTab3 active">SANTANDER WEEK</a></li>
                             <li><a href="#" id="ngb-slide-4" nu="4" class="botonTab4">SANTANDER LIFE</a></li>
                             <li><a href="#" id="ngb-slide-5" nu="6" class="botonTab6">EDUCACIÓN</a></li>
                             <li><a href="#" id="ngb-slide-6" nu="6" class="botonTab6">EDUCACIÓN</a></li>
@@ -21,12 +21,14 @@
                 </div>
                 <div class="col-md-8 productos">
                     <ngb-carousel id="cargadorAcciones" [showNavigationArrows]="showNavigationArrows">
-                        <ng-template ngbSlide *ngFor="let tab of tabs">
-                            <div class="carousel-caption caja_productos1">
-                                <p class="titu">{{tab.titulo}}</p>
-                                <img [src]="tab.img" width="110" height="110" class="imagen" alt="Work/Cafe">
-                                <p class="textoTab">{{tab.bajada}}</p>
-                                <a class="botonTab" href="/workcafe/index.asp" onclick="ga('send','event', 'Personas', 'Work/Cafe', 'Tab');" title="Work/Cafe" target="_self">Ver más</a>
+                        <ng-template ngbSlide *ngFor="let tab of tabsOk, let i =  index">
+                            <div>
+                                <div class="carousel-caption caja_productos1">
+                                    <p class="titu">{{tab.titulo}}</p>
+                                    <img [src]="tab.img" width="110" height="110" class="imagen" alt="Work/Cafe">
+                                    <p class="textoTab">{{tab.bajada}}</p>
+                                    <button (click)="verLanding(i)" type="button" class="btn btn-outline-primary btn-block">Comprar</button>
+                                </div>
                             </div>
                         </ng-template>
                     </ngb-carousel>
