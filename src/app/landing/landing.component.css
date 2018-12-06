@@ -1,0 +1,12 @@
+.landing-header,.landing-body{
+   box-shadow: 0 0 2px #ddd;
+   background: #fff;
+}
+
+.box-landing,.landing-header{
+    margin-bottom: 40px;
+}
+
+.landing-body{
+    padding: 30px;
+}

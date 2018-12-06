@@ -1,42 +1,62 @@
-<div class="container">
+
     <div class="row">
 
-        <div class="col-md-3 text-right">
+        <div class="col-3 text-right">
             <img src="../assets/img/tabs/menu-gris.jpg" class="imagen" alt="Menu">
         </div>
 
-        <div class="col-md-6">
-            <div class="caja">
-                <div class="col-md-4 productos">
-                    <div>
-                        <ul class="menu_productos">
-                            <li><a href="#" id="ngb-slide-1" nu="1" class="botonTab1">WORK/CAFÉ SANTANDER</a></li>
-                            <li><a href="#" id="ngb-slide-2" nu="2" class="botonTab2">APPLE</a></li>
-                            <li><a href="#" id="ngb-slide-3" nu="3" class="botonTab3 seleccionaP">SANTANDER WEEK</a></li>
-                            <li><a href="#" id="ngb-slide-4" nu="4" class="botonTab4">SANTANDER LIFE</a></li>
-                            <li><a href="#" id="ngb-slide-5" nu="6" class="botonTab6">EDUCACIÓN</a></li>
-                            <li><a href="#" id="ngb-slide-6" nu="6" class="botonTab6">EDUCACIÓN</a></li>
-                        </ul>
-                    </div>
+        <div class="col-6">
+            <div id="carouselExampleIndicators" class="carousel slide caja" data-ride="carousel">
+            <div class="row">
+                <div class="col-4 productos">
+                <!--<div> -->
+                    <ul class="menu_productos carousel-indicators">
+                        <li *ngFor="let bullet of categorias, let i = index" data-target="#carouselExampleIndicators" [attr.data-slide-to]="i" [ngClass]="active(i)"><a class="botonTab1">{{bullet}}</a></li>
+                    </ul>
+                    <!-- <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol> -->
                 </div>
-                <div class="col-md-8 productos">
-                    <ngb-carousel id="cargadorAcciones" [showNavigationArrows]="showNavigationArrows">
-                        <ng-template ngbSlide *ngFor="let tab of tabs">
-                            <div class="carousel-caption caja_productos1">
-                                <p class="titu">{{tab.titulo}}</p>
-                                <img [src]="tab.img" width="110" height="110" class="imagen" alt="Work/Cafe">
-                                <p class="textoTab">{{tab.bajada}}</p>
-                                <a class="botonTab" href="/workcafe/index.asp" onclick="ga('send','event', 'Personas', 'Work/Cafe', 'Tab');" title="Work/Cafe" target="_self">Ver más</a>
+                <!-- </div> -->
+                <div class="col-8 productos">
+                    <div class="carousel-inner">
+                          <div *ngFor="let tab of tabsOk, let i = index" class="carousel-item" [ngClass]="active(i)">
+                                <div class="carousel-caption caja_productos1">                                    
+                                        <p class="titu">{{tab.titulo}}</p>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <img [src]="tab.img" width="110" height="110" class="imagen" alt="Work/Cafe">
+                                        </div>
+                                        <div class="col-7">
+                                            <p class="textoTab">{{tab.bajada}}</p>
+                                            <button  [routerLink]="['/landing',tab.id]" type="button" class="btn btn-primary btn-block">VER MÁS</button>
+                                        </div>
+                                    </div>
+                            
+                          </div>
+                        </div>
+                    <!-- <ngb-carousel id="cargadorAcciones" [showNavigationArrows]="showNavigationArrows">
+                        <ng-template ngbSlide *ngFor="let tab of tabsOk">
+                            <div>
+                                <div class="carousel-caption caja_productos1">
+                                    <p class="titu">{{tab.titulo}}</p>
+                                    <a  [routerLink]="['/landing',tab.id]" type="button" class="btn btn-outline-primary btn-block">Comprar</a>
+                                    <img [src]="tab.img" width="110" height="110" class="imagen" alt="Work/Cafe">
+                                    <p class="textoTab">{{tab.bajada}}</p>
+                                    <
+                                </div>
                             </div>
                         </ng-template>
-                    </ngb-carousel>
-                </div>
+                    </ngb-carousel> -->
+                </div> 
             </div>
         </div>
+    </div>
+</div>
 
-        <div class="col-md-3 text-left">
+        <div class="col-3 text-left">
             <img src="../assets/img/tabs/clientes-nuevos.jpg" class="imagen" alt="Bienvenida Clientes">
         </div>
     </div>
-
-</div>

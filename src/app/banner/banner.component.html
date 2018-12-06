@@ -1,23 +1,21 @@
 <section id="banner">
     <div class="row">
         <div class="col-md-12">
-
-          
            
-            <ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
-              <ng-template ngbSlide *ngFor="let banner of banners">
-                <img [src]="banner.img" alt="Random slide">
-                <div class="carousel-caption info">
-       
-                  <h3 class="titulo">{{banner.titulo}}</h3>
-                  <p class="bajada">{{banner.bajada}}</p>
-
-                </div>
-              </ng-template>
+            <ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators" [wrap]="true">
+                <ng-template ngbSlide *ngFor="let banner of bannersOk">    
+                <a [routerLink]="['/landing',banner.id]">  
+                    <img [src]="banner.img" alt="Random slide">
+                    <div class="carousel-caption info">
+                        <h3 class="titulo">{{banner.titulo}}</h3>
+                        <p class="bajada">{{banner.bajada}}</p> 
+                    </div>
+                </a>
+                </ng-template>
             </ngb-carousel>
-            
-            
+           
+  
+
         </div>
     </div>
 </section>
-

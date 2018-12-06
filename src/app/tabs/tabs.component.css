@@ -1,9 +1,8 @@
 .caja {
     float: left;
-    width: 505px;
+    width:auto;
     height: 164px;
     border-bottom: 1px solid #c6c6c6;
-    margin: 0 22px;
     padding: 0;
     background: #FFF;
 }
@@ -76,7 +75,7 @@ p.titu {
     font-family: 'Open Sans', Arial, sans-serif;
     color: #333;
     width: auto;
-    height: 22px;
+    height: 22px; 
     margin: 11px 0 0;
     font-weight: normal;
     padding: 0;
@@ -89,15 +88,14 @@ p.titu {
     margin: 10px 0 0;
 }
 
-#cargadorAcciones p.textoTab {
+p.textoTab {
     float: left;
-    width: 170px;
     height: auto;
     font-size: 12px;
     color: #333;
     font-family: 'Open Sans', Arial, sans-serif;
     padding: 0;
-    margin: 12px 0 0 15px;
+
 }
 
 #cargadorAcciones a.botonTab {
@@ -123,4 +121,38 @@ p.titu {
 
 #cargadorAcciones a.botonTab:hover {
     background-color: #A50606;
+}
+
+.carousel-indicators{
+    display: block!important;
+    position: relative;
+}
+
+.carousel-caption{
+    position: relative;
+    text-align: left
+}
+
+ul.menu_productos{
+  padding: 10px;
+  height: auto;
+
+}
+.carousel-inner{
+    height: 180px;
+}
+
+.btn{
+    background: #ec0000;
+    outline: none;
+    border: none;
+    font-size: 9px;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 20px;
+
 }

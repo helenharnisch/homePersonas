@@ -12,10 +12,10 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavInfoComponent } from './nav-info/nav-info.component';
 import { IndEconomicosComponent } from './ind-economicos/ind-economicos.component';
+import { LandingComponent } from './landing/landing.component';
+import { HomeComponent } from './home/home.component';
 
-
-
-
+import { APP_ROUTES } from './app.routes';
 
 
 @NgModule({
@@ -27,11 +27,14 @@ import { IndEconomicosComponent } from './ind-economicos/ind-economicos.componen
     HeaderComponent,
     FooterComponent,
     NavInfoComponent,
-    IndEconomicosComponent,   
+    IndEconomicosComponent,
+    LandingComponent,
+    HomeComponent,   
   ],
   imports: [
     BrowserModule,
     NgbModule,
+    APP_ROUTES,
 
   ],
   providers: [DataService],
