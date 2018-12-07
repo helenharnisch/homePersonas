@@ -1,10 +1,6 @@
 #banner{
     max-height: 280px;
     margin-bottom: 40px;
-}
-
-
-.banner{
     position: relative;
 }
 
@@ -44,4 +40,88 @@
 
 .bajada{
     font-size: 14px;
+}
+
+
+
+.rutclave {
+    width: 185px;
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 15px 15px 45px 15px;
+    z-index: 100;
+    overflow: visible;
+    background-color: rgba(255,255,255, 0.7);
+}
+
+.rutclave .rowForm {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+.rutclave .rowForm label {
+    width: 29px;
+    margin: 0;
+    margin-right: 10px;
+    text-align: left;
+    font-weight: normal;
+    font-size: 11px;
+    color: #333;
+}
+
+.rutclave .rowForm input {
+    width: 115px;
+    height: 20px;
+    font-size: 11px;
+    font-weight: normal;
+    background-color: #D6D6D6;
+    -webkit-box-shadow: inset 0px 2px 1px 0px rgba(167, 169, 179, 0.8);
+    -moz-box-shadow: inset 0px 2px 1px 0px rgba(167, 169, 179, 0.8);
+    -o-box-shadow: inset 0px 2px 1px 0px rgba(167, 169, 179, 0.8);
+    box-shadow: inset 0px 2px 1px 0px rgba(167, 169, 179, 0.8);
+    border: none;
+    color: #333;
+}
+
+.submit {
+    width: 115px;
+    height: 23px;
+    display: block;
+    background-color: #d20000;
+    border-width: 0;
+    margin: 0 0 0 39px;
+    color: #FFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sin-clave {
+    color: #333;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0 0 0 39px;
+    padding: 7px 0;
+    display: block;
+    text-decoration: underline !important;
+}
+
+.protege-transacciones {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    color: #ec0000 !important;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    padding: 7px 10px 7px 55px;
+    width: 100%;
+    line-height: 14px;
 }
